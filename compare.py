@@ -1,5 +1,6 @@
 import numpy
 import cv2
+import os
 
 
 class Compare():
@@ -95,6 +96,10 @@ class Compare():
 			cv2.imshow("img_1", self.img_1)
 
 			cv2.imshow("img_2", self.img_2)
+
+			if os.path.exists("difference") == False:
+
+				os.mkdir("difference")
 
 			cv2.imshow("diff", differences)
 
