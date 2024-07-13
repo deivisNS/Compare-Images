@@ -125,8 +125,14 @@ class Compare():
 				info.write(self.message)
 				
 
+#instancia con la ruta de las dos imagenes dentro de un array(lista)
 img = Compare(["2.jpg", "into_imagen.jpg"])
 
+"""si esta en false, entonces imprimira un mensaje con los datos de las imagenes he intentara realizar la
+comparacion (las imagenes tienen que tener el mismo tamaño, pero se te sera informado si no son iguales),
+si esta en true es para que se pueda realizar el cambio de tamaño a una de ellas para poder realizar la 
+comparacion"""
 img.check(change = True)
 
+#intenta procesar la comparacion e informa en un archivo txt lo sucedido
 img.process_comparison()
